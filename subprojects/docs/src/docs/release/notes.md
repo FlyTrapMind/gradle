@@ -74,11 +74,11 @@ Add-->
     
 ### Improved Gradle Daemon, now enabled by default
 
-The performance improvement gained by using the Daemon is staggering: our performance tests [show that builds could be up to 75% faster](TODO(ew) link blog post), just by enabling the Gradle Daemon.
+The performance improvement gained by using the Daemon is staggering: our performance tests [show that builds could be up to 75% faster](http://gradle.org/blog/gradle-3-0-m1-unleash-the-daemon/), just by enabling the Gradle Daemon.
 
 We have been working hard to make the Gradle Daemon aware of its health and impact on the system it's running on; and we believe that it is now robust enough to be **enabled by default**.
 
-We encourage you to give the improved Daemon a try. If for some reason you encounter problems, you can [disable the Daemon](userguide/gradle_daemon.html#daemon_faq). Please [submit feedback to us](https://discuss.gradle.org/c/bugs/) if you encounter instability so that we can make further improvements.
+We encourage you to give the improved Daemon a try. If for some reason you encounter problems, you can [disable the Daemon](userguide/gradle_daemon.html#daemon_faq). Please [submit feedback to us](https://discuss.gradle.org/c/3-0-m1/) if you encounter instability so that we can make further improvements.
 
 ### Delayed configuration of task inputs and outputs
 
@@ -141,12 +141,6 @@ The following APIs have been deprecated:
 * `TaskOutputs.files()` method – call `TaskOutputs.file()` with each file separately instead
 
 ## Potential breaking changes
-
-### Supported Java versions
-
-TBD - Gradle requires Java 7 or later to run.
-TBD - Gradle tooling API requires Java 7 or later to run.
-TBD - Test execution in Gradle requires Java 6 or later.
 
 ### Sonar plugin has been removed
 
@@ -233,11 +227,6 @@ eclipse.project {
 * Removed old wrapper properties `urlRoot`, `distributionName`, `distributionVersion` and `distributionClassifier`
 * Removed deprecated `has()`, `get()` and `set()` dynamic methods exposed by `ExtraPropertiesDynamicObjectAdapter`
 * Removed deprecated constructor `DefaultSourceDirectorySet(String name, FileResolver fileResolver)`
-
-### Tooling API changes
-
-TBD - Requires tooling API version 2.0 or later.
-TBD - Tooling API supports only Gradle 1.2 and later.
 
 #### Eclipse model contains classpath attributes for project and external dependencies
 
